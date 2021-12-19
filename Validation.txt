@@ -1,0 +1,14 @@
+Regular Expression
+/ / -> Regular Expression comes in between these symbol \
+^ -> check from the start
+$ -> check from the last
+[a-z]-> match only lowercase alphabets
+[a-Z]-> match only uppercase alphabets
+[a-zA-Z]-> math both uppercase and lowercase alphabets
+[0-9]-> match only the Numeric value
+? -> position of string doesnot matter
+. -> matches single character
+* -> matches precedensce character
+{minimum,maximum}-> {8,20} number between 8 and 20
+for special character use \
+example : \@,\#\S(space),\ - and etc

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <script>
+        localStorage.setItem('learning','We are learning Javascript')
+        const show = localStorage.getItem('learning')
+        console.log(show)
+        localStorage.removeItem('learning')
+
+        let details={
+            'firstName':'Ashim',
+            'lastName':'KC',
+            'subject':['html','Css','javascript']
+        }
+      const into_string=JSON.stringify(details)
+      localStorage.setItem('Details',into_string)
+    
+      const data = localStorage.getItem('Details')
+     const into_object = JSON.parse(data)  
+     console.log(into_object)
+       
+
+
+
+    </script>
+    
+</body>
+</html>

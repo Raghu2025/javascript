@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <script>
+        const numbers = [10,20,30,,40,50,60,70]
+        const filterResult=numbers.filter((num)=>{
+            return (num > 10 && num < 50)
+        })
+        document.write(`${filterResult}`)
+        filterResult.map(num=>{
+            document.write(`<li>${num}</li>`)
+        })
+        
+        // const numbers = [10,20,30,,40,50,60,70]
+        // const filterResult=numbers.filter((num)=>{
+        //     return (num > 10 && num < 50)
+        // })
+        // document.write(`${filterResult}`)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        const text ="Welcome to Dursikshya to read programming language"
+        document.write(`*${text}<br>`)
+
+//to count the length of a string
+          document.write(`*${text.length}<br>`)
+
+
+//to find the position of a string (while using index of it's counting start with 0)
+        document.write(`*${text.indexOf('to')}<br>`)
+
+
+// to find the last position of a repeated string use lastIndexOf
+       document.write(`*${text.lastIndexOf('to')}<br>`)
+*
+
+ //replace
+       document.write(`*${text.replace('read','learn')}<br>`)
+
+//replaced globally to replace more than one
+       document.write(`*${text.replace(/to/g,'too')}<br>`)
+
+//to uppercase
+      document.write(`*${text.toUpperCase()}<br>`)    
+      
+//to lowercase
+       document.write(`*${text.toLowerCase()}<br>`)  
+
+//substring -> small part of string
+
+
+//slice(start,end) -> slice(0,20)
+  document.write(`*${text.slice(0,21)}<br>`)  
+
+ 
+//substring(start,end) -> substring(0,20)
+document.write(`*${text.substring(5,30)}<br>`)  
+  
+//subtr(start,length) -> substr(5,25)
+document.write(`*${text.substr(0,7)}<br>`)  
+
+//concatenate + 
+const b='24'
+const c='24'
+const d= b+c
+document.write(`*${d}`)
+
+    </script>       
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Slider</title>
+        <script src="slider.js"></script>
+        <style>
+            body{
+                background-color:skyblue ;
+
+
+                         
+            }
+           .container{
+              height: 300px;
+              width: 400px; 
+              margin: auto;
+              position: relative;
+           }
+           #image{
+               height: 100%;
+               width: 100%;
+               
+           }
+           .previous{
+               z-index: 1;
+               position: absolute;
+               left:0px;
+               top:45%;
+           }
+           .next{
+            z-index: 1;
+            position: absolute;
+            right:0px;
+            top:45%;
+           }
+button{
+    font-size: 1.5rem;
+    color:floralwhite;
+    background-color: black;
+    font-weight: bolder;
+    border-style: none;
+
+}
+button:hover{
+    transform: scale(1.05);
+    color:black;
+    background-color: floralwhite;
+
+}
+              
+          
+
+        </style>
+    </head>
+    <body>
+     <div class="container" onmouseover="stops()" onmouseout="starts()">
+        <button class="previous" onclick="prev()">&lt;</button>
+     <button class="next" onclick="next()">&gt;</button>
+         <img src="images/OIP.jpg" id="image" alt=".......loading">
+     
+    </div>
+    </body>
+</html>

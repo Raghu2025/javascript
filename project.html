@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" 
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/f94cdc7d00.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project</title>
+    <Style>
+        *{
+            box-sizing: border-box;
+        }
+    body{
+        width:100%;
+        padding: 0;
+        margin: 0;
+    }  
+    .fo{
+       color:white;
+       font-family: Arial, Helvetica, sans-serif;
+       margin: 0;
+       font-weight: bold;
+
+    }
+    .fo1{
+        background-color:white;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 2px 3px;
+        border-radius: 2px;
+     
+       
+    }
+    .section1{
+       background-image:url(image_prac/img1.jpg) ;
+       background-size:100% 100%;
+       background-repeat: repeat;
+
+
+    }
+    .layer{
+         background-color: rgb(35,41,68);
+        z-index: 1;
+         opacity: 0.9; 
+    
+
+    }
+    .foh{
+        text-align:center;
+        display: flex;
+        flex-direction:row;
+        gap: 10px;
+        justify-content: center;
+        align-items:center ;
+        padding: 3px;
+        letter-spacing: 3px;
+
+    }
+    .foh:hover .fo1{
+        background-color: rgb(121,191,216);
+        transition: 0.5s;
+
+    }
+    .foh:hover .fo{
+        color:rgb(121,191,216);
+        transition: 0.5s;
+    }
+.ico{
+    color: white;
+    font-size: 1.2em;
+
+}
+.foh:hover .ico{
+    color:rgb(121,191,216);
+    transition: 0.5s;
+}
+.section2{
+    margin-top: 7rem;
+}
+#section2{
+   background-color: white;
+    height: 2px;
+
+}
+.btn1{
+    border:3px solid white;
+    background-color: rgb(35,41,68);
+    color:white
+}
+
+.btn1:hover{
+border-color:rgb(121,191,216);
+border-style: solid;
+color:rgb(121,191,216) ;
+transition: 0.5s;
+}
+.odd{
+    color:white;
+    padding: 10rem 4rem;
+    margin: 0;
+    height: 100%;
+  
+}
+.even{
+    color:white;
+    padding: 10rem 4rem;
+    margin: 0;
+    height: 100%;
+
+}
+.o1{
+    background-color: rgba(0,255,200,0.7);
+}
+.o2{
+    background-color: rgba(0, 7, 99, 0.7);
+}
+.o3{
+    background-color: rgba(3, 223, 87, 0.836);
+}
+.o4{
+    background-color: rgba(174, 0, 255, 0.7);
+}
+.o5{
+    background-color: rgba(255, 238, 0, 0.7);
+}
+.o6{
+    background-color: rgba(0, 86, 133, 0.7);
+}
+.odd:hover{
+    background-color: rgba(222, 33, 181, 0);
+    transition: 0.5s;
+}
+.even:hover{
+    background-color: rgba(22,222,50,0);
+    transition: 0.5s;
+}
+
+hr{
+    background-color: white;
+}
+.one{
+    background-image: url(image_prac/img.jpg);
+    background-size: 100% 100%;
+}
+.two{
+    background-image:url(image_prac/img2.jpg
+    ) ;
+    background-size: 100% 100%;
+}
+.three{
+    background-image:url(image_prac/img3.jpg) ;
+    background-size: 100% 100%;
+}
+.four{
+    background-image:url(image_prac/img4.jpg) ;
+    background-size: 100% 100%;
+}
+.five{
+    background-image:url(image_prac/img5.jpg) ;
+    background-size: 100% 100%;
+}
+.six{
+    background-image:url(image_prac/img6.jpg) ;
+    background-size: 100% 100%;
+}
+.explain{
+    background-color: rgb(35,41,68);
+    padding: 5rem 10rem;
+}
+
+   
+
+     
+    </Style>
+</head>
+<body>
+    <div class="container-fluid section1 d-flex flex-column p-0">
+    <div class="container-fluid layer p-3"><nav class="d-flex justify-content-between fi">
+            <div class="foh">
+                    <p class="fo1 text-center">Creation</p> <p class="fo">Prototype</p>
+                  </div>
+             <div class="foh">
+                     <p class="fo">Menu</p>  <i class="fas fa-bars ico"></i>
+                  </div>
+           
+    </nav>
+      
+  <div class="container section2">
+      <h1 class="display-5 text-left text-white p-4" style="font-family: serif;">Hi, I am the Creator</h1>
+      <hr id="section2">
+      <div class="ins2 d-flex flex-row p-3 gap-4">
+               <p class="text-white font-wrap col-6 mr-3" style="letter-spacing: 2px;">A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP
+                AND RELEASED UNDER THE CREATIVE COMMONS.</p>  
+                <button class="btn1 px-5 py-0"  style="letter-spacing: 4px;">GET STARTED <i class="bt1 ml-3 fas fa-arrow-right"></i></button>  
+      </div>
+  </div>
+</div>
+    </div>
+
+
+
+<aside class="row m-0" style="width: 100%;">
+    <div class="col-7 p-0 one"><div class="odd o1">
+    <h1>Ideas</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet.</p>
+    </div></div>
+
+    <div class="col-5 two p-0"><div class="even o2">
+        <h1>Innovative</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div></div>
+
+
+    <div class="col-5 three p-0"><div class="even o3">
+        <h1>Creation</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div></div>
+
+    <div class="col-7 four p-0"><div class="odd o4">
+<h1>Technology</h1>
+ <hr>
+ <p>Lorem ipsum dolor sit.</p>
+    </div></div>
+
+
+    <div class="col-7 five p-0"><div class="odd o5">
+        <h1>Motivation</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div></div>
+
+    <div class="col-5 six p-0"><div class="even o6">
+ <h1>Inspiration</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div></div>
+
+</aside>
+
+<div class="container-fluid explain d-flex flex-column justify-content-end">
+    <h1 class="display-5 text-left text-white p-4" style="font-family: serif;">Lorem ipsum </h1>
+    <hr class="" style="width: 15rem;">
+    <p class="text-white font-wrap col-10 m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque mollitia iure explicabo perspiciatis veniam harum quis,
+         ipsam, ipsum alias ratione, distinctio consequatur. Rerum ea nemo nostrum error dolores molestias debitis! </p>
+    <button class="btn1 px-5 py-2"  style="letter-spacing: 4px; margin: 1rem 3rem 0 0; ">GET STARTED <i class="bt1 ml-3 fas fa-arrow-right"></i></button>
+
+
+</div>
+ 
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <script>
+        //toFixed() to decide how many numbers to be printed after decimal points
+        const x=25.43672
+        document.write(`${x.toFixed(2)}<br>`)
+        document.write(`${x.toFixed(1)}<br>`)
+
+        //toPrecision() -> to decide how many numbers to be printed as a whole
+        document.write(`${x.toPrecision(3)}<br>`)
+        document.write(`${x.toPrecision(4)}<br>`)
+        document.write(`${x.toPrecision(1)}<br>`)
+
+        //to convert string to number
+        // i>Number()
+        // ii>parseFloat() ->it includes decimal no as well as whole number
+        // iii>parseInt() -> it include only whole number
+const y = Number('25')
+document.write(typeof(y))
+document.write(`<br>`)
+
+const z= '30.1234'
+document.write(`${parseInt(z)}<br>`)
+document.write(`${parseFloat(z)}<br>`)
+document.write(`${Number(z)}<br>`)
+
+
+const a=Number('hello world')
+document.write(`${typeof(a)}<br>`)
+document.write(`${a}`)
+
+    </script>
+    
+</body>
+</html> 

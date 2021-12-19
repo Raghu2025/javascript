@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigation Bar</title>
+	<link rel="stylesheet" type="text/css" href="/home/raghu/Downloads/fontawesome-free-5.15.2-web/css/all.min.css">
+	<script type="text/javascript" src="/home/raghu/Downloads/fontawesome-free-5.15.2-web/js/all.min.js"></script>
+	<style type="text/css">
+		
+		body{
+		margin: 0px;
+
+		}
+		.w3{
+			width :100%;
+			height: 80px;
+			font-size: 2vw;
+			font-family: ;
+			position: relative;
+			margin: 0px;
+			padding: 0px;
+
+		}
+		#w3{
+			position: absolute;
+			bottom: 5px;
+			left: 30px;
+			color: green;
+			margin: 0px;
+			padding: 0px;
+
+		}
+		p{
+			font-size: 1.5vw;
+			float: right;
+			position: absolute;
+			bottom: -7px;
+			right: 170px;
+			font-family: serif;
+			word-spacing: 3px;
+
+		}
+		#w3h{
+			color:#555555;
+			text-decoration: none;
+			margin: 0;
+			padding: 0;
+		}
+		#w3h:hover{
+         color: green;
+		}
+		button{
+			position: absolute;
+			bottom: 30%;
+    right: 30px;
+   padding: 5px 20px 5px 20px; 
+   border-radius: 5px;
+   border-style: none;
+   background-color: green;
+   color: white;
+		}
+		button:hover{
+			 background-color: rgb(0,110,0);
+                 border-style: none;
+		}
+		nav{
+			width: 100%;
+			background-color: grey;
+			position: sticky;
+			top: 0px;
+		    }
+		ul{
+		    width: 65%;
+		    display: inline-block;
+			list-style: none;
+			margin: 0px;
+			padding: 10px;
+
+		}
+		li{
+			display: inline;
+			padding: 10px;
+			margin: 0px 1px 0px 1px;
+
+			
+		}
+		li:hover{
+			background-color: black;
+
+		}
+		a{
+			color: white;
+			text-decoration: none;
+			position: relative;
+		}
+		#more{
+			color:white;
+
+		}
+		#more:hover{
+		 background-color: black;
+
+		}
+		.sort{
+			
+			position: absolute;
+		
+            
+		}
+		span{
+			width: 20px;
+		}
+		.coa1{
+			display: inline-block;
+            width: 30%;
+           position: absolute;
+           right: 0;
+          float: right;
+           background-color: grey;
+
+
+		}
+		
+		.coa{
+             list-style: none;
+             text-align: right;
+              position: absolute;
+           right: 0;
+          float: right;
+		}
+		.coa2{
+			display: inline;
+			color : white;
+			text-align: right;
+		}
+		.whole{
+			width: 100%;
+			height: 500px;
+			position: fixed;
+			top: 118px;
+			left:0px;
+			background-color:darkgrey;
+			display: none;
+			opacity: 0.8;
+		}
+#more:hover .whole{
+	display: block;
+	z-index: 1;
+}
+.box1{
+	width: 25%;
+
+}
+#dp1{
+	list-style: none;
+	font-family: monospace;
+
+
+}
+#dp2{
+	display: block;
+}
+
+section{
+	width: 15%;
+	height: 500px;
+    background-color: lightgrey;
+    position: fixed;
+    
+    overflow: auto;
+}	
+#sec0{
+	list-style: none;
+	padding: 0px;
+	width: 100%;
+
+
+}
+#sec1{
+margin: 2px 0px 0px 0px;
+display: block;
+padding: 0px;
+font-weight: bold;
+font-family: monospace;
+font-size: 1.2vw;
+}
+#sec11{
+	font-size: 1.5vw;
+	font-weight: bold;
+	display: block;
+	font-family: monospace;
+}
+#sec11:hover{
+	background-color: lightgrey !important;
+	cursor: pointer;
+}
+#sec1:hover{
+	background-color: grey;
+    cursor: pointer;
+}
+article{
+	width: 85%;
+	height: 800px;
+    background-color: lightgrey;
+    position: relative;
+    overflow: auto;
+    float:right;
+}
+
+	</style>
+
+</head>
+
+<body>
+<div class="w3">
+	<h1 id="w3"><a href="" id="w3h">w3school</a>.com</h1>
+	<p>THE WORLD's lARGEST  WEB DEVELOPER SITE</p>
+
+	<button>Log in</button>
+</div>
+<nav>
+	<ul>
+			<li><a href=""><i class="h01 home fas fa-home"></i></a></li>
+			<li><a href="">HTML</a></li>
+			<li><a href="">CSS</a></li>
+			<li><a href="">JAVASCRIPT</a></li>
+			<li><a href="">SQL</a></li>
+			<li><a href="">PYTHON</a></li>
+			<li><a href="">PHP</a></li>
+			<li><a href="">BOOTSTRAP</a></li>
+			<li><a href="">HOW TO</a></li>
+			<li id="more"><span>MORE<i class="sort fas fa-sort-down"></i></span>
+				<div class="whole">
+					<div class="box1">
+					<ul id="dp1">
+    
+					<li id="dp0">HTML and CSS</li>
+					<li id="dp2">Learn HTML</li>
+					<li id="dp2">Learn CSS</li>
+					<li id="dp2">learn Bootstrap</li>
+					<li id="dp2">learn W33.CSS</li>
+					<li id="dp2">learn Colors</li>
+					<li id="dp2">learn Icons</li>
+					<li id="dp2">learn Graphics</li>
+					<li id="dp2">learn SVG</li>
+					<li id="dp2">learn Canvas</li>
+					<li id="dp2">learn How To</li>
+					<li id="dp2">learn Sass</li>
+	 				</ul>
+	 				</div>
+				</div>
+				</li>
+			
+
+		</ul>
+		<div class="coa1">
+		<ul class="coa">
+		<li class="coa2">COARSE</li>
+		<li class="coa2"><i class="fas fa-adjust"></i></li>
+		<li class="coa2"><i class="fas fa-globe-asia"></i></li>
+		<li class="coa2"><i class="fas fa-search"></i></li>
+		</ul>
+		</div>
+	
+</nav>
+<section>
+	<ul id="sec0">
+		<li id="sec11">HTML Tutorial</li>
+		<li id="sec1">HTML Introduction</li>
+		<li id="sec1">HTML Editors</li>
+		<li id="sec1">HTML Basic</li>
+		<li id="sec1">HTML Elements</li>
+		<li id="sec1">HTML Attributes</li>
+		<li id="sec1">HTML Headings</li>
+		<li id="sec1">HTML Paragraphs</li>
+		<li id="sec1">HTML Styles</li>
+		<li id="sec1">HTML Formatting</li>
+		<li id="sec1">HTML Quotations</li>
+		<li id="sec1">HTML Comments</li>
+		<li id="sec1">HTML Colors</li>
+		<li id="sec1">HTML CSS</li>
+		<li id="sec1">HTML Links</li>
+		<li id="sec1">HTML Images</li>
+		<li id="sec1">HTML Tables</li>
+		<li id="sec1">HTML Lists</li>
+		<li id="sec1">HTML Classes</li>
+		<li id="sec1">HTML Id</li>
+		<li id="sec1">HTML Iframes</li>
+		<li id="sec1">HTML Javascript</li>
+		<li id="sec1">HTML File paths</li>
+		<li id="sec1">HTML Head</li>
+		<li id="sec1">HTML Layout</li>
+		<li id="sec1">HTML Responsive</li>
+		<li id="sec1">HTML Computercode</li>
+		<li id="sec1">HTML Semantics</li>
+		<li id="sec1">HTML Style Guide</li>
+		<li id="sec1">HTML Entities</li>
+		<li id="sec1">HTML Symbols</li>
+		<li id="sec1">HTML Emojis</li>
+		<li id="sec1">HTML Symbols</li>
+		<li id="sec1">HTML Charsets</li>
+		<li id="sec1">HTML URL Encodes</li>
+		<li id="sec1">HTML vs. XHTML</li>
+	</ul>
+	<ul id="sec0">
+		<li id="sec11">HTML Forms</li>
+		<li id="sec1">HTML Forms</li>
+		<li id="sec1">HTML Form Attributes</li>
+		<li id="sec1">HTML Form Elements</li>
+		<li id="sec1">HTML Input Types</li>
+		<li id="sec1">HTML Attributes</li>
+		<li id="sec1">HTML Input Attributes</li>
+		<li id="sec1">HTML Input Form Attributes</li>
+	</ul>
+	<br>
+	<ul id="sec0">
+		<li id="sec11">HTML Graphics</li>
+		<li id="sec1">HTML Canvas</li>
+		<li id="sec1">HTML SVG</li>
+	</ul>
+	<br>
+	<ul id="sec0">
+		<li id="sec11">HTML Media</li>
+		<li id="sec1">HTML Video</li>
+		<li id="sec1">HTML Audio</li>
+		<li id="sec1">HTML Plug-ins</li>
+		<li id="sec1">HTML YouTube</li>
+
+	</ul><br>
+	<ul id="sec0">
+		<li id="sec11">HTML APIs</li>
+		<li id="sec1">HTML Geolocation</li>
+		<li id="sec1">HTML Drag/Drop</li>
+		<li id="sec1">HTML Web Storage</li>
+		<li id="sec1">HTML Web Workers</li>
+		<li id="sec1">HTML SSE</li>
+	</ul><br>
+	<ul id="sec0">
+		<li id="sec11">HTML Examples</li>
+		<li id="sec1">HTML Examples</li>
+		<li id="sec1">HTML Quiz</li>
+		<li id="sec1">HTML Exercises</li>
+		<li id="sec1">HTML Certificate</li>
+		<li id="sec1">HTML Summary</li>
+		<li id="sec1">HTML Accessibility</li>
+	</ul><br>
+	<ul id="sec0">
+		<li id="sec1">HTML References</li>
+		<li id="sec1">HTML Tag List</li>
+		<li id="sec1">HTML Global Attributes</li>
+		<li id="sec1">HTML Browser Support</li>
+		<li id="sec1">HTML Events</li>
+		<li id="sec1">HTML Colors</li>
+		<li id="sec1">HTML Canvas</li>
+		<li id="sec1">HTML Audio/Video</li>
+		<li id="sec1">HTML Doctypes</li>
+		<li id="sec1">HTML Character Sets</li>
+		<li id="sec1">HTML URL Encode</li>
+		<li id="sec1">HTTP Messages</li>
+		<li id="sec1">HTTP Methods</li>
+		<li id="sec1">PX to EM Converter</li>
+		<li id="sec1">Keyboard Shortcuts</li>
+	</ul>
+</section>
+<article>
+	
+</article>
+
+
+</body>
+</html>
+
+
+
+
+
+

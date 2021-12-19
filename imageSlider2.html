@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageSlider</title>
+    <style>
+        .container{
+            height :400px;
+            width:700px;
+            margin:auto;
+            background-color: black;
+
+        }
+        img{
+            height:100%;
+            width:100%;
+        }
+        .previous{
+            position: absolute;
+            top:25%;
+            left:0%;
+        }
+        .next{
+            position: absolute;
+            top:25%;
+            right:0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image_prac/img.jpg" alt="" id="image">
+        <button class="previous" onclick="prev()">&lt;</button>
+        <button class="next" onclick="next()">&gt;</button>
+    </div>
+    <script src="imageslider.js"></script>
+</body>
+</html>

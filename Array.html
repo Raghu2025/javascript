@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <pre>   
+        array -> collection of homogeneous data of array contain more than one value
+        eg:
+        array_name=value1,value2,value3,.........,.....[]
+    </pre>
+    <script>
+        const fruits=['mango','banana','apple','lemon']
+        document.write(`${fruits}<br>`)                    
+      document.write(fruits[0]+'<br>')
+
+      //count the length of array
+      document.write(`length=${fruits.length}<br>`)
+      document.write(fruits.indexOf('mango')+'<br>')
+
+      //pop()-> removes last array element
+      fruits.pop()
+      document.write(` using pop => ${fruits}<br>`)
+      //push() -> add array element at last position
+      fruits.push('cherry')
+      document.write(`Using${fruits}<br>`)
+
+      //shift()-> removes first array element
+fruits.shift()
+document.write(`Using shift -> ${fruits}<br>`)
+
+      //unshift() - > add array element at first position
+      fruits.unshift('orange')
+      document.write(`Using unshift->  ${fruits}<br>`)
+
+      //splice() -> to remove the multiple element from array
+
+      fruits.splice(2,2)
+      document.write(`Using splice-> ${fruits}<br>`)
+
+//
+fruits.splice(2,0,'grapes','kiwi','pineapple')
+document.write(`Using splice-> ${fruits}<br>`)
+
+//Ascending order -> sort()
+fruits.sort()
+document.write(`Using sort-> ${fruits}<br>`)
+
+//reverse 
+fruits.reverse()
+document.write(`Using reverse -> ${fruits}<br>`)
+
+
+    </script>
+</body>
+</html>

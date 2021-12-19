@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <script>
+        const days = ['sun','mon','tue','wed','thurs','fri','sat']
+        const month = ['jan','feb','mar','april','may','june','july','aug','sep','oct','nov','dec']
+        const d=new Date()
+        document.write(`${d}<br>`)
+
+        //To get only year we use getFullYear() ->2021
+        document.write(`Year=${d.getFullYear()}<br>`)
+        
+        //To get month we use getMonth()->0-11
+        document.write(`Month=${month[d.getMonth()].toUpperCase()}<br>`)
+
+        //To get Date we use getDate()->1-31
+          document.write(`Date=${d.getDate()}<br>`)
+
+          //To get day we use get day()-> 0-6
+          document.write(`Day=${days[d.getDay()].toUpperCase()}<br>`)
+        
+        //To get hour we use getHours() -> 0-23
+        document.write(`Hours=${d.getHours()}<br>`)
+
+        //To get minute we use getMinutes()-> 0-59
+        document.write(`Minutes=${d. getMinutes()}<br>`)
+
+        //To get seconds we use getSeconds() ->0-59
+        document.write(`Second=${d.getSeconds()}<br>`)
+        
+        //To get millisecond we use getMillisecond()->0-999
+        document.write(`Milliseconds=${d.getMilliseconds()}<br>`)
+
+
+    </script>
+</body>
+</html>
